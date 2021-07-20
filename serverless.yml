@@ -1,0 +1,17 @@
+service: service--manual-serverless-aws-nodejs
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  stage: dev
+  region: ap-northeast-1
+
+functions:
+  generateRandomNumber:
+    handler: handler.generateRandomNumber
+    events:
+      - http:
+          path: /api/generateRandomNumber
+          method: get
+          cors: true
