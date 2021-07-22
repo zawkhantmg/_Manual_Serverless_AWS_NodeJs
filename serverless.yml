@@ -1,4 +1,4 @@
-service: service--manual-serverless-aws-nodejs
+service: serverless-aws-nodejs
 
 provider:
   name: aws
