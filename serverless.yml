@@ -1,4 +1,4 @@
-service: serverless-aws-nodejs
+service: serverless-zkm
 
 provider:
   name: aws
